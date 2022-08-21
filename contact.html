@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Contact Us</title>
+    <style>
+      footer {
+        background-color: rgba(255, 213, 0, 0.073);
+      }
+      a{
+        text-decoration: none;
+        color: indigo;
+      }
+      div.back{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      p.foot {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: black;
+      }
+      div.container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15.67vw;
+        background-color: rgba(0, 0, 0, 0.046);
+        width: 64vw;
+      }
+      div.col-md-7{
+        padding-left: 3vw;
+      }
+      div.container4{
+        width: 60vw;
+        margin-left: 21vw;
+      }
+      div.img{
+        display: flex;
+      }
+      li{
+        line-height: 2;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav id="Top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="g logo.png" alt="" width="30" />
+          </a>
+          <a class="navbar-brand" href="#">Go-Code</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Courses
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Python</a></li>
+                  <li><a class="dropdown-item" href="#">Machine Learning</a></li>
+                  <li><a class="dropdown-item" href="#">C & C++</a></li>
+                  <li><a class="dropdown-item" href="#">Java </a></li>
+                  <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">HTML,CSS,JavaScript</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Frontend Development</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">BackEnd Development</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">More Courses coming soon</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+              >
+                Login
+              </button>
+              <button class="btn btn-success" data-bs-toggle="modal"
+              data-bs-target="#signupModal">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+        <!-- Login Modal -->
+    
+        <div
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Log in to Go-Code Account</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your valid email address" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password must be of minimum 8 characters">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">I Accepts the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+        <!-- Sign Up Modal -->
+      
+        <div
+        class="modal fade"
+        id="signupModal"
+        tabindex="-1"
+        aria-labelledby="signupModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="signupModalLabel">Create an free Go-Code Account</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your valid email address" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">No need to enter middle name</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Contact No.</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter 10 digit contact number" aria-describedby="conatctHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Create a Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password must be of min. 8 characters">
+                  <label for="exampleInputPassword1" class="form-label">Re-enter your Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password must be of min. 8 characters">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">I Accepts the terms & conditions</label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Create Account</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <br>
+    <div class="container4">
+        <h2>Contact Us</h2>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter valid email address">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlSelect1" class="form-label">Enquiry related for</label>
+            <select id="exampleFormControlSelect1" class="form-control">
+                <option>Web Development</option>
+                <option>Graphic Design</option>
+                <option>Pyhton Programming</option>
+                <option>Artificial Intelligence</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Write here about your Query</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="write here.."></textarea>
+          </div>
+
+          <button class="btn btn-primary">Submit</button>
+    </div>
+    <br>
+    <br>
+    <div class="container4">
+        <h5>You can also Contact me on</h5>
+        <div class="contact">
+            <ol>
+                <li>&nbsp; &nbsp;&nbsp;Mobile no. 9689675896</li>
+                <li>&nbsp; &nbsp;&nbsp;Email me. gauravmadan2004@gmail.com</li>
+                <li>
+                    <div class="img">
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.instagram.com/gauravmadan2004/" target="_blank"><img src="insta.png" alt="" width="50"></a>
+                        </p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://github.com/gauravmad" target="_blank"><img src="git.png" alt="" width="50"></a>
+                        </p>
+                    </div>
+                </li>
+            </ol>
+        </div> 
+    </div>
+
+
+
+    <footer>
+        <hr>
+        <div class="back">
+          <a href="#Top"><p>Back to Top</p></a>        
+        </div>
+        <p class="foot">Copyright &copy; @2022 All rights reserved Go-Code by Gaurav Madan</p>
+        <hr>
+      </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

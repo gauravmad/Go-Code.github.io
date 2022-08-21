@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>About</title>
+    <style>
+      footer {
+        background-color: rgba(255, 213, 0, 0.073);
+      }
+      div.back{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      a{
+        text-decoration: none;
+        color: indigo;
+      }
+      p.foot {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: black;
+      }
+      div.container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15.67vw;
+        background-color: rgba(0, 0, 0, 0.046);
+        width: 64vw;
+      }
+      div.col-md-7{
+        padding-left: 3vw;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav id="Top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="g logo.png" alt="" width="30" />
+          </a>
+          <a class="navbar-brand" href="#">Go-Code</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Courses
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Python</a></li>
+                  <li><a class="dropdown-item" href="#">Machine Learning</a></li>
+                  <li><a class="dropdown-item" href="#">C & C++</a></li>
+                  <li><a class="dropdown-item" href="#">Java </a></li>
+                  <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">HTML,CSS,JavaScript</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Frontend Development</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">BackEnd Development</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">More Courses coming soon</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+              >
+                Login
+              </button>
+              <button class="btn btn-success" data-bs-toggle="modal"
+              data-bs-target="#signupModal">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+        <!-- Login Modal -->
+    
+        <div
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Log in to Go-Code Account</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your valid email address" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password must be of minimum 8 characters">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">I Accepts the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- Sign Up Modal -->
+      
+        <div
+        class="modal fade"
+        id="signupModal"
+        tabindex="-1"
+        aria-labelledby="signupModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="signupModalLabel">Create an free Go-Code Account</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your valid email address" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">No need to enter middle name</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Contact No.</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter 10 digit contact number" aria-describedby="conatctHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Create a Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password must be of min. 8 characters">
+                  <label for="exampleInputPassword1" class="form-label">Re-enter your Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password must be of min. 8 characters">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">I Accepts the terms & conditions</label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Create Account</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+    <div class="container2">
+      <div
+        class="row featurette d-flex justify-content-center align-items-center"
+      >
+        <div class="col-md-7">
+          <h2 class="text-primary fw-normal lh-1">
+            Future Scope of <span class="text-success">Web Development</span>
+          </h2>
+          <br />
+          <p class="lead">
+            &nbsp;Web development is a good career. Mondo's annual Tech and Digital Marketing Salary guide found “Web Developer” was the most in-demand job title in tech and one of its top-paying jobs. And, according to the U.S. Bureau of Labor, the job market for Web Developers is expected to grow 15 percent by 2026.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="" src="coding.jpg" alt="" width="400" height="350" />
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="container2">
+        <div class="row featurette">
+           <div class="col-md-7 order-md-2 justify-content-center align-items-center">
+                <br>
+                <br>
+               <h2 class="text-primary fw-normal lh-1">
+                    Future Scope of <span class="text-success">Artificial Intelligence</span>
+                </h2>
+                <br />
+                <p class="lead">
+                     &nbsp;The scope of Artificial Intelligence in India is still in the adoption stage but slowly it is being used to find smart solutions to modern problems in almost all the major sectors such as Agriculture, Healthcare, Education and Infrastructure, Transport, Cyber Security, Banking, Manufacturing, business, Hospitality,
+                </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="border" src="ai about.jpg" alt="" width="400" height="350" />
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container2">
+        <div
+          class="row featurette d-flex justify-content-center align-items-center"
+        >
+          <div class="col-md-7">
+            <h2 class="text-primary fw-normal lh-1">
+              Future Scope of <span class="text-success">Graphic Design</span>
+            </h2>
+            <br />
+            <p class="lead">
+              &nbsp;The Demand for Graphic Designers in India is Increasing Day by Day. As plenty of new Startups are coming, they will require Logos, websites and other design materials so eventually, it will create more no of job roles in Graphic Designing Industry
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img class="border" src="graphic design.jpg" alt="" width="400" height="350" />
+          </div>
+        </div>
+      </div>
+    <footer>
+        <hr>
+        <div class="back">
+          <a href="#Top"><p>Back to Top</p></a>        
+        </div>
+        <p class="foot">Copyright &copy; @2022 All rights reserved Go-Code by Gaurav Madan</p>
+        <hr>
+      </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

@@ -1,0 +1,59 @@
+h2{
+    color: yellow;
+    font-weight: 600;
+}
+body{
+    background-color: rgba(0, 0, 0, 0);
+}
+p.bold{
+    font-size: 21px;
+    color: chartreuse;
+}
+h2.topic{
+    color: indigo;
+    font-weight: 600;
+    text-align: center;
+}
+div.web{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container{
+    background-color: rgba(250, 235, 215, 0.208);
+}
+a{
+    text-decoration: none;
+    color: indigo;
+}
+footer{
+    background-color: rgba(255, 213, 0, 0.073);
+}
+p.foot{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+}
+
+div.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15.67vw;
+    background-color: rgba(0, 0, 0, 0.046);
+    width: 64vw;
+}
+
+div.col-md-7{
+    padding: 3vw;
+}
